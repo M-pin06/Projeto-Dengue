@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+
+        /*-----------------------------------------MEDIA QUERIE CELULAR---------------------------------------------*/
+
+        body {
+            
+            padding: 0;
+            margin: 0;
+            background-image: linear-gradient(to bottom,#3B8C6E -30%,#0B2B40,#0B2B40 );
+        }
+        @media screen and (max-width: 425px) {
+             .br{
+                display: none;
+             }
+            .item{
+                display: flex;
+                align-items: center;
+                background-color: #89d99d52;
+                padding-right: 1rem;
+                height: 9rem;
+            }
+            .paragrafo-desktop{
+                display: none;
+            }
+            .paragrafo-desktop-aside{
+                display: none;
+            }
+
+            aside.container-desc p{
+                margin: 0;
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.74);
+                font-family: Arial;
+                font-weight: 600;
+            }
+            
+            .aedes-img{
+                width: 7rem;
+                margin: 1rem;
+                height: 7rem;
+            }
+
+            p{
+                margin-bottom: 0;
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.74);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            li a{
+                color: white;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                height: fit-content;
+            }
+            .img-nav{
+                display: none;
+                width: 30px;
+                height: fit-content;
+            }
+            nav{
+                height: 2.5em;
+                background-color: #3b8c6e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top: white 1px solid;
+            }
+            nav ul{
+                display: flex;
+              
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                height: 2.5rem;
+            }
+            li{
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+                font-weight: 900;
+                font-size: 11px;
+                color: white;
+                font-family: arial;
+            }
+
+            li:hover{
+                background-color: #296952;
+            }
+            form {
+            grid-template-rows: 10% 30% 10% 30% 20%;
+            display: grid;
+            justify-content: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+        }
+
+        .labelcpf {
+            text-indent: 5px;
+            font-size: 16px;
+        }
+        .inputcpf {
+            background-color: rgba(255, 255, 255, 0.568);
+            border-style: none;
+            width: 15rem;
+            height: 1.9rem;
+            border-radius: 7px;
+        }
+
+        .inputsubmit {
+            width: 10rem;
+            height: 2.3rem;
+            border-radius: 10px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: #56dc61;
+            border: 0;
+        }
+            .slucas-img{
+                width: 30%;
+            }
+            .stcasa-img{
+                width: 30%;
+            }
+            .unimed-img{
+                width: 30%;
+                margin-top: 1rem;
+            }
+            .img-nav{
+                width: 40px;
+                display: none;
+            }
+            img{
+            width: 100%;
+        }
+        .container-logo{
+            margin-left: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .unimed-grid{
+            display: flex;
+            justify-content: end;
+            margin-right: 1rem;
+        }
+
+        main{ 
+            grid-template-columns: 80%;
+            display: grid;
+            justify-content: center;
+            
+            height: 43.2em;
+        }
+
+        .logo {
+            background-color: #3b8c6e;
+            height: 7em;
+
+            display: grid;
+            align-items: center;
+            grid-template-columns: 60% 40%;
+        }
+
+        .textologo {
+            font-size: 12px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: white;
+        }
+
+        
+
+        h4{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            margin-left: 2rem;
+            color: #89d99d70;
+        }
+
+        h1{
+            display: flex;
+            align-items: end;
+            color: #89D99D;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section div{
+            display: flex;
+            justify-content: center;
+
+        }
+
+        section div h1 {
+            
+
+            
+            font-size: 23px;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+        }
+
+        .botaopref {
+            
+            background-color: orange;
+            width: 15rem;
+            height: 5.5rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 20px;
+        }
+
+        .textoconta-container{
+            font-size: 11px;
+            font-family: arial;
+            color: white;
+        }
+
+        div.textoconta-container a{
+            font-family: arial;
+            color: white;
+            text-decoration: underline;
+        }
+
+        div.container-logo a{
+            height: 35%;
+            width: 35%;
+        }
+        a{
+            width: 15rem;
+            height: 5.5rem;
+            text-decoration: none;
+        }
+
+        .botaocid {
+            background-color: rgb(90, 155, 176);
+            width: 15rem;
+            height: 5.5rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            display: flex;
+            flex: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 20px;
+        }
+        footer {
+            background-color: #3b8c6e;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8px;
+        
+            font-family: Arial, Helvetica, sans-serifs;
+            color: rgba(255, 255, 255, 0.26);
+        }
+
+       
+        .textoconta1 {
+            color: white;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 24%;
+            top: 78%;
+        }   
+
+        .textoconta2 {
+            position: absolute;
+            color: rgb(62, 19, 220);
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 52%;
+            top: 78%;
+        }
+        
+        .textoconta2:hover {
+            text-decoration: underline;
+        }
+
+
+        }
+
+        /*----------------------- MEDIA QUERIE TABLET------------------------------ */
+
+        @media screen and (min-width: 426px) and (max-width: 768px) {
+            .item{
+                flex-direction: column;
+                display: flex;
+                background-color: #89d99d52;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                width: 13.5rem;
+                height: 37.5rem;
+            }
+            h4{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            margin-left: 2rem;
+            color: #89d99d70;
+            font-size: 23px;
+        }
+
+        h1{
+            display: flex;
+            align-items: end;
+            color: #89D99D;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+        }
+
+            p{
+                font-weight: 600;
+                margin-bottom: 0;
+                font-size: 1rem;
+                color: rgba(255, 255, 255, 0.74);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .paragrafo-desktop{
+                font-size: 1rem;
+                color: rgba(255, 255, 255, 0.74);
+                font-family: Arial;
+                font-weight: 600;
+                margin-top: 0;
+                margin-bottom: 9rem;
+            }
+
+            aside.container-desc p{
+                font-size: 0.9rem;
+                color: rgba(255, 255, 255, 0.74);
+                font-family: Arial;
+                font-weight: 600;
+                margin: 0;
+            }
+            .container-desc{
+                display: flex;
+                margin-top: 4rem;
+                justify-content: center;
+            }
+            .aedes-img{
+
+                width: 13.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                height: 11.5rem;
+            }
+
+             li a{
+                color: white;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                height: fit-content;
+            }
+            .img-nav{
+                width: 30px;
+                height: fit-content;
+            }
+            nav{
+                height: 2.5em;
+                background-color: #3b8c6e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top: white 1px solid;
+            }
+            nav ul{
+                display: flex;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                height: 2.5rem;
+            }
+            li{
+                width: fit-content;
+                padding: 10px 10px 10px 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 3px;
+                font-weight: 900;
+                font-size: 16px;
+                color: white;
+                font-family: arial;
+            }
+
+            li:hover{
+                cursor: pointer;
+                background-color: #296952;
+            }
+        form {
+            grid-row: 2;
+            display: grid;
+            grid-template-rows: 10% 30% 10% 30% 20%;
+            justify-content: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+        }
+
+        .labelcpf {
+            text-indent: 5px;
+            font-size: 20px;
+        }
+
+        .labeldata{
+            text-indent: 5px;
+            font-size: 20px;
+        }
+        .inputcpf {
+            background-color: rgba(255, 255, 255, 0.568);
+            border-style: none;
+            width: 18rem;
+            height: 2.5rem;
+            border-radius: 7px;
+        }
+
+        .inputsubmit {
+            width: 14rem;
+            height: 2.7rem;
+            border-radius: 10px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: #56dc61;
+            border: 0;
+            font-size: 20px;
+        }
+
+            .slucas-img{
+                width: 100px;
+            }
+            .stcasa-img{
+                width: 100px;
+            }
+            .unimed-img{
+                width: 150px;
+                margin-bottom: 1rem;
+            }
+            .img-nav{
+                width: 40px;
+            }
+
+            .img-logo{
+            width: 120px;
+        }
+        .container-logo{
+            margin-left: 1rem;
+            display: flex;
+            width: 50%;
+            align-items: center;
+        }
+
+        .textoconta-container{
+            display: flex;
+            align-items: start;
+            grid-row: 3;
+            font-size: 12px;
+            font-family: arial;
+            color: white;
+        }
+
+        div.textoconta-container a{
+            font-family: arial;
+            color: white;
+            text-decoration: underline;
+        }
+
+        .unimed-grid{
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            margin-right: 1rem;
+            height: 7rem;
+        }
+
+        main{
+            grid-template-columns: 40% 40%;
+            display: grid;
+            justify-content: center;
+            gap: 2rem;
+            height: fit-content;
+        }
+
+
+        .grid-item{
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            background-color: #3b8c6e;
+            height: 10em;
+
+            display: grid;
+            align-items: center;
+            grid-template-columns: 60% 40%;
+        }
+
+        .textologo {
+            font-size: 18px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: white;
+        }
+
+        section div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        section div h1 {
+            
+
+            
+            font-size: 35px;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+        }
+
+        .botaopref {
+            
+            background-color: orange;
+            width: 19rem;
+            height: 7rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.452);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 30px;
+        }
+
+        div.container-logo a{
+            width: 120px;
+            height: 105.14px;
+        }
+
+        a{
+            width: 19rem;
+            height: 5.5rem;
+            text-decoration: none;
+        }
+
+        .botaocid {
+            background-color: rgb(90, 155, 176);
+            width: 19rem;
+            height: 7rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.486);
+            display: flex;
+            flex: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 30px;
+        }
+        footer {
+            background-color: #3b8c6e;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        
+            font-family: Arial, Helvetica, sans-serifs;
+            color: rgba(255, 255, 255, 0.26);
+        }
+       
+        .textoconta1 {
+            color: white;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 24%;
+            top: 78%;
+        }   
+
+        .textoconta2 {
+            position: absolute;
+            color: rgb(62, 19, 220);
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 52%;
+            top: 78%;
+        }
+        
+        .textoconta2:hover {
+            text-decoration: underline;
+        }
+        }
+        
+        /* --------------------------------------MEDIA QUERIE DESKTOP------------------------------------------- */
+
+        @media screen and (min-width: 769px) {
+            .item{
+                flex-direction: column;
+                display: flex;
+                background-color: #89d99d52;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                width: 13.5rem;
+                height: 37.5rem;
+            }
+            h4{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            margin-left: 2rem;
+            color: #89d99d70;
+            font-size: 23px;
+        }
+
+        h1{
+            display: flex;
+            align-items: end;
+            color: #89D99D;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+        }
+
+            p{
+                font-weight: 600;
+                margin-bottom: 0;
+                font-size: 1rem;
+                color: rgba(255, 255, 255, 0.74);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .paragrafo-desktop{
+                font-size: 1rem;
+                color: rgba(255, 255, 255, 0.74);
+                font-family: Arial;
+                font-weight: 600;
+                margin-top: 0;
+                margin-bottom: 9rem;
+            }
+
+            aside.container-desc p{
+                font-size: 0.9rem;
+                color: rgba(255, 255, 255, 0.74);
+                font-family: Arial;
+                font-weight: 600;
+                margin: 0;
+            }
+            .container-desc{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .aedes-img{
+
+                width: 13.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                height: 11.5rem;
+            }
+
+             li a{
+                display: flex;
+                align-items: center ;
+                width: fit-content;
+                height: fit-content;
+                color: white;
+            }
+            .img-nav{
+                width: 40px;
+            }
+            nav{
+                height: 3.5em;
+                background-color: #3b8c6e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top: white 1px solid;
+            }
+            nav ul{
+                display: flex;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                height: 3.5rem;
+            }
+            li{
+                width: fit-content;
+                padding: 10px 10px 10px 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 3px;
+                font-weight: 900;
+                font-size: 18px;
+                color: white;
+                font-family: arial;
+            }
+
+            li:hover{
+                cursor: pointer;
+                background-color: #296952;
+            }
+        form {
+            grid-row: 2;
+            display: grid;
+            grid-template-rows: 10% 30% 10% 30% 20%;
+            justify-content: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+        }
+
+        .labelcpf {
+            text-indent: 5px;
+            font-size: 20px;
+        }
+
+        .labeldata{
+            text-indent: 5px;
+            font-size: 20px;
+        }
+        .inputcpf {
+            background-color: rgba(255, 255, 255, 0.568);
+            border-style: none;
+            width: 18rem;
+            height: 2.5rem;
+            border-radius: 7px;
+        }
+
+        .inputsubmit {
+            width: 14rem;
+            height: 2.7rem;
+            border-radius: 10px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: #56dc61;
+            border: 0;
+            font-size: 20px;
+        }
+
+            .slucas-img{
+                width: 100px;
+            }
+            .stcasa-img{
+                width: 100px;
+            }
+            .unimed-img{
+                width: 150px;
+                margin-bottom: 1rem;
+            }
+            .img-nav{
+                width: 40px;
+            }
+
+            .img-logo{
+            width: 120px;
+        }
+        .container-logo{
+            margin-left: 1rem;
+            display: flex;
+            width: 50%;
+            align-items: center;
+        }
+
+        .textoconta-container{
+            display: flex;
+            align-items: start;
+            grid-row: 3;
+            font-size: 12px;
+            font-family: arial;
+            color: white;
+        }
+
+        div.textoconta-container a{
+            font-family: arial;
+            color: white;
+            text-decoration: underline;
+        }
+
+        .unimed-grid{
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            margin-right: 1rem;
+            height: 7rem;
+        }
+
+        main{
+            grid-template-columns: 40% 40%;
+            display: grid;
+            justify-content: center;
+            gap: 2rem;
+            height: fit-content;
+        }
+
+
+        .grid-item{
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            background-color: #3b8c6e;
+            height: 10em;
+
+            display: grid;
+            align-items: center;
+            grid-template-columns: 60% 40%;
+        }
+
+        .textologo {
+            font-size: 18px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: white;
+        }
+
+        section div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        section div h1 {
+            
+
+            
+            font-size: 35px;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+        }
+
+        .botaopref {
+            
+            background-color: orange;
+            width: 19rem;
+            height: 7rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.452);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 30px;
+        }
+
+        div.container-logo a{
+            width: 120px;
+            height: 105.14px;
+        }
+
+        a{
+            width: 19rem;
+            height: 5.5rem;
+            text-decoration: none;
+        }
+
+        .botaocid {
+            background-color: rgb(90, 155, 176);
+            width: 19rem;
+            height: 7rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.486);
+            display: flex;
+            flex: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 30px;
+        }
+        footer {
+            background-color: #3b8c6e;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        
+            font-family: Arial, Helvetica, sans-serifs;
+            color: rgba(255, 255, 255, 0.26);
+        }
+       
+        .textoconta1 {
+            color: white;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 24%;
+            top: 78%;
+        }   
+
+        .textoconta2 {
+            position: absolute;
+            color: rgb(62, 19, 220);
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 52%;
+            top: 78%;
+        }
+        
+        .textoconta2:hover {
+            text-decoration: underline;
+        }
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <header class="logo">
+        <div class="container-logo">
+            <a href="index.html"><img src="Brasao_de_Lins-SP.png" class="img-logo"></a>
+            
+            <div class="textologo">Prefeitura Municipal <br> de Lins</div>
+        </div>
+        <div class="unimed-grid">
+            <img src="unimed.png" class="unimed-img"> 
+            <img src="Adobe Express - file.png" class="stcasa-img">  
+            <img src="thumbnail.jpg" alt="" class="slucas-img">     
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="principal.html"><img src="home.png" class="img-nav">Inicio</a></li>
+            <li><a href="usuarioacompanhar.html"><img src="visualizar.png" class="img-nav">Acompanhar</a></li>
+            <li><a href="usuariodenunciar.html"><img src="report.png" class="img-nav">Denuncias</a></li>
+            <li><a href="usuariomapa.html"><img src="map.png" class="img-nav">Mapa de riscos</a></li>
+        </ul>
+    </nav>
+    <main>  
+        
+        <section>
+            <h1>
+            <span>
+                INICIO
+            </span>
+        </h1>
+            <h4>DENGUE</h4>
+            <article>
+                <p>
+                    A dengue é transmitida pela picada de um mosquito infectado. É uma doença que afeta pessoas de todas as idades,
+                    com sintomas que incluem febre baixa ou alta, acompanhada de forte dor de cabeça, dor retro-ocular (atrás dos olhos),
+                    mialgias e artralgias e exantema. A doença pode progredir para formas graves, caracterizadas principalmente por choque,
+                    dificuldade respiratória e/ou comprometimento orgânico grave. A dengue tem comportamento sazonal, ou seja, no Hemisfério
+                    Sul a maioria dos casos ocorre durante o primeiro semestre do ano, porém, no Hemisfério Norte os casos ocorrem 
+                    principalmente no segundo semestre. Esse padrão de comportamento corresponde aos meses mais quentes e chuvosos.
+<br><br>
+                    Nas Américas, o principal vetor responsável pela transmissão da dengue é o mosquito Aedes aegypti.
+                </p>
+<br class="br"><br class="br">
+                <p class="paragrafo-desktop">
+                      Todas as pessoas com febre de menos de sete dias durante uma epidemia ou por casos suspeitos de dengue, cuja evolução não
+                     é possível predizer, devem procurar tratamento médico onde algumas rotinas estão estabelecidas para o acompanhamento,
+                      conforme a avaliação clínica inicial e subseqüente, quanto a possibilidade de evolução para gravidade. A hidratação oral
+                       (com água, soro caseiro, água de coco), ou venosa, dependendo da fase da doença, é a medicação fundamental e está indicada
+                        em todos os casos em abundância. Não devem ser usados medicamentos à base de ácido acetil salicílico e antiinflamatórios,
+                         como aspirina e AAS, pois podem aumentar o risco de hemorragias.
+                </p>
+            </article>
+            
+        </section>
+        <aside class="container-desc">
+            <div class="item">
+                <img src="aedes.jpg" class="aedes-img">
+            <p>
+                
+                O Aedes aegypti, mosquito transmissor da dengue e da febre amarela urbana, é um mosquito pequeno, preto com listras brancas no corpo, tórax, cabeça e pernas
+                </p><br>
+                <p class="paragrafo-desktop-aside">
+                É transmitida pela picada de um mosquito infectado com um dos quatro sorotipos do vírus da dengue.
+                É uma doença febril que afeta bebês, crianças e adultos. A infecção pode ser assintomática ou pode apresentar sintomas que variam de febre baixa a febre alta incapacitante, com forte dor de cabeça, dor atrás dos olhos, dores musculares e nas articulações e erupções cutâneas. 
+            </p>
+            
+            </div>
+                
+        </aside>
+    </main>
+    <footer>© Copyright Prefeitura Municipal de Lins - 2006-2025. Todos os direitos reservados
+    </footer>
+</body>
+</html>

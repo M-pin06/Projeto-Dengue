@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*-----------------------------------------MEDIA QUERIE CELULAR---------------------------------------------*/
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: linear-gradient(to bottom,#3B8C6E -40%,#0B2B40,#0B2B40 );
+        }
+        @media screen and (max-width: 425px) {
+
+            .container-botao{
+                gap: 0.5rem;
+                display: flex;
+            }
+
+            .grid-item2{
+                display: none;
+            }
+            .desktop-local{
+               display: flex;
+               align-items: center;
+               flex-direction: column;
+            }
+            li a{
+                color: white;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                height: fit-content;
+            }
+            .img-nav{
+                display: none;
+                width: 30px;
+                height: fit-content;
+            }
+            nav{
+                height: 2.5em;
+                background-color: #3b8c6e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top: white 1px solid;
+            }
+            nav ul{
+                display: flex;
+              
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                height: 2.5rem;
+            }
+            li{
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+                font-weight: 900;
+                font-size: 11px;
+                color: white;
+                font-family: arial;
+            }
+
+            li:hover{
+                background-color: #296952;
+            }
+            .slucas-img{
+                width: 30%;
+            }
+            .stcasa-img{
+                width: 30%;
+            }
+            .unimed-img{
+                width: 30%;
+                margin-top: 1rem;
+            }
+            img{
+            width: 35%;
+        }
+        img{
+            width: 80px;
+            height: 70px;
+        }
+        .container-logo{
+            margin-left: 1rem;
+            display: flex;
+            width: 12rem;
+            align-items: center;
+        }
+
+        .unimed-grid{
+            display: flex;
+            justify-content: end;
+            margin-right: 1rem;
+        }
+
+        .nav-bar {
+            border-top: 1px solid #d4ffef ;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            place-items: center;
+            height: 2em;
+            background-color: #3b8c6e;
+            font-size: 12px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: white;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 10% 90%;
+            align-items: center;
+            height: 45.3em;
+            
+        }
+
+        .main-container-denuncias {
+            gap: 0.5rem;
+            margin-top: -1em;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 80%;
+            grid-template-rows: 11.5rem 11.5rem 11.5rem;
+
+        }
+
+        div.container-denuncias-texto p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(255, 255, 255, 0.801);
+            font-weight: 600;
+            
+        }
+
+        .container-denuncias-texto {
+            height: 8rem;
+            background-color: rgb(35, 63, 82);
+         
+            box-shadow: 2px 2px black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .container-denuncias-foto {
+            margin-left: 2em;
+            height: 150px;
+            width: 150px;
+            background-color: silver;
+            font-size: 20px;
+            font-weight: 900;
+            display: none;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-aceitar {
+            margin-left: 1em;
+            width: 170px;
+            height: 180px;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: Black;
+            border-radius: 10px;
+            display: none;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .botao-aceitar {
+             width: 4rem;
+            height: 2.5rem;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: rgb(21, 255, 0);
+            font-size: 10px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .botao-finalizar-mobile {
+            width: 4rem;
+            height: 2.5rem;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: rgb(255, 0, 0);
+            font-size: 10px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .botao-marcar {
+             width: 4rem;
+            height: 2.5rem;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: rgb(0, 89, 255);
+            font-size: 10px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .div-top-bar {
+            display: grid;
+            flex-direction: row;
+            place-items: center;
+        }
+        
+        .div-top-bar-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: #3b8c6e;
+            border-radius: 10px;
+            height: 50px;
+            width: 250px;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: white;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            background-color: #3b8c6e;
+            height: 7em;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 60% 40%;
+        }
+
+        .textologo {
+            font-size: 12px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: white;
+        }
+
+        main section {
+
+            display: grid;
+            justify-content: center;
+            grid-template-rows: 5rem 8rem 8rem ;
+            grid-template-columns: 47.5% 5% 47.5%;
+            background-color: rgb(35, 63, 82);
+            width: 85.7rem;
+            height: 21rem;
+            border-radius: 20px;
+        }
+
+        section div{
+            display: flex;
+            justify-content: center;
+
+        }
+
+        section div h1 {
+            
+
+            
+            font-size: 23px;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+        }
+
+        .div-texto-principal {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 0;
+            grid-row-end: 1;
+        }
+
+        .div-botao-denunciar {
+            margin-right: -5em;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .div-botao-mapa {
+            margin-top: 3em;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .botaopref {
+            background-color: orange;
+            width: 15rem;
+            height: 5.5rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            margin-right: 20px;
+            box-shadow: 2px 2px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 20px;
+        }
+
+        a{
+            width: 15rem;
+            height: 5.5rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .div-botao-acompanhar {
+            margin-left: -5em;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .botaocid {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: rgb(90, 155, 176);
+            width: 15rem;
+            height: 5.5rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            display: flex;
+            flex: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 20px;
+        }
+
+        .botaomapa {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: rgb(39, 134, 82);
+            width: 15rem;
+            height: 5.5rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            display: flex;
+            flex: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 20px;
+        }
+
+        .section-mapa {
+            display: grid;
+            grid-template-rows: 15% 85%;
+            grid-template-columns: 100%;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 27em;
+        }
+
+        .div-mapa-text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+
+        .div-top-bar2{
+            display: none;
+        }
+        
+        .div-mapa-imagem {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-dengue {
+            height: 350px;
+            width: 400px;
+        }
+
+        footer {
+            background-color: #3b8c6e;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8px;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: rgba(255, 255, 255, 0.26);
+        }
+
+        input:active {
+            background-color: rgb(255, 0, 0);
+        }
+       
+        .textoconta1 {
+            color: white;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 24%;
+            top: 78%;
+        }   
+
+        .textoconta2 {
+            position: absolute;
+            color: rgb(62, 19, 220);
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 52%;
+            top: 78%;
+        }
+        
+        .textoconta2:hover {
+            text-decoration: underline;
+        }
+        }
+
+
+        /*----------------------- MEDIA QUERIE TABLET------------------------------ */
+
+        @media screen and (min-width: 426px) and (max-width: 768px){
+            .div-top-bar{
+                display: none;
+            }
+            .main-container-denuncias{
+                display: none;
+            }
+            
+            li a{
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                height: fit-content;
+            }
+            .img-nav{
+                width: 30px;
+                height: fit-content;
+            }
+            nav{
+                height: 2.5em;
+                background-color: #3b8c6e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top: white 1px solid;
+            }
+            nav ul{
+                display: flex;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                height: 2.5rem;
+            }
+            li{
+                width: fit-content;
+                padding: 10px 10px 10px 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 3px;
+                font-weight: 900;
+                font-size: 16px;
+                color: white;
+                font-family: arial;
+            }
+
+            li:hover{
+                cursor: pointer;
+                background-color: #296952;
+            }
+        img{
+            width: 80px;
+            height: 70px;
+        }
+        .container-logo{
+            margin-left: 1rem;
+            display: flex;
+            width: 12rem;
+            align-items: center;
+        }
+
+        .unimed-grid{
+            display: flex;
+            justify-content: end;
+            margin-right: 1rem;
+        }
+
+        .nav-bar {
+            border-top: 1px solid #d4ffef ;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            place-items: center;
+            height: 2em;
+            background-color: #3b8c6e;
+            font-size: 12px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: white;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 10% 90%;
+            align-items: center;
+            height: 45.3em;
+            margin-top: 0.3em;
+            margin-left: 3.2em;
+            margin-right: 3.2em;
+            margin-bottom: -0.7rem;
+        }
+
+        .main-container-denuncias2 {
+            margin-top: -1em;
+            height: 580px;
+            width: 650px;
+            display: grid;
+            grid-template-columns:  2fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+        }
+
+        .container-denuncias {
+            background-color: rgb(199, 255, 236);
+            width: 450px;
+            height: 180px;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: black;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-denuncias-texto {
+            font-size: 20px;
+            font-weight: 900;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-denuncias-foto {
+            margin-left: 2em;
+            height: 150px;
+            width: 150px;
+            background-color: silver;
+            font-size: 20px;
+            font-weight: 900;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-aceitar {
+            margin-left: 1em;
+            width: 170px;
+            height: 180px;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: Black;
+            border-radius: 10px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .botao-aceitar {
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(235, 231, 231);
+            color: green;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            text-shadow: 1px 1px black;
+        }
+
+
+        .botao-cancelar {
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(235, 231, 231);
+            color: red;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            text-shadow: 1px 1px black;
+        }
+
+        .botao-marcar {
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(235, 231, 231);
+            color: blue;
+            text-shadow: 1px 1px black;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+        }
+
+        .div-top-bar2 {
+            display: grid;
+            flex-direction: row;
+            place-items: center;
+        }
+        
+        .div-top-bar-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: #3b8c6e;
+            border-radius: 10px;
+            height: 50px;
+            width: 250px;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: white;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            background-color: #3b8c6e;
+            height: 7em;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 60% 40%;
+        }
+
+        .textologo {
+            font-size: 12px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: white;
+        }
+
+        main section {
+
+            display: grid;
+            justify-content: center;
+            grid-template-rows: 5rem 8rem 8rem ;
+            grid-template-columns: 47.5% 5% 47.5%;
+            background-color: rgb(35, 63, 82);
+            width: 85.7rem;
+            height: 21rem;
+            border-radius: 20px;
+        }
+
+        section div{
+            display: flex;
+            justify-content: center;
+
+        }
+
+        section div h1 {
+            
+
+            
+            font-size: 23px;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+        }
+
+        .div-texto-principal {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 0;
+            grid-row-end: 1;
+        }
+
+        .div-botao-denunciar {
+            margin-right: -5em;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .div-botao-mapa {
+            margin-top: 3em;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .botaopref {
+            background-color: orange;
+            width: 15rem;
+            height: 5.5rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            margin-right: 20px;
+            box-shadow: 2px 2px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 20px;
+        }
+
+        a{
+            width: 15rem;
+            height: 5.5rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .div-botao-acompanhar {
+            margin-left: -5em;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .botaocid {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: rgb(90, 155, 176);
+            width: 15rem;
+            height: 5.5rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            display: flex;
+            flex: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 20px;
+        }
+
+        .botaomapa {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: rgb(39, 134, 82);
+            width: 15rem;
+            height: 5.5rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            display: flex;
+            flex: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 20px;
+        }
+
+        .section-mapa {
+            display: grid;
+            grid-template-rows: 15% 85%;
+            grid-template-columns: 100%;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 27em;
+        }
+
+        .div-mapa-text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        
+        .div-mapa-imagem {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-dengue {
+            height: 350px;
+            width: 400px;
+        }
+
+        footer {
+            background-color: #3b8c6e;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: rgba(255, 255, 255, 0.26);
+        }
+
+        input:active {
+            background-color: rgb(255, 0, 0);
+        }
+       
+        .textoconta1 {
+            color: white;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 24%;
+            top: 78%;
+        }   
+
+        .textoconta2 {
+            position: absolute;
+            color: rgb(62, 19, 220);
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 52%;
+            top: 78%;
+        }
+        
+        .textoconta2:hover {
+            text-decoration: underline;
+        }
+        }
+
+        /* --------------------------------------MEDIA QUERIE DESKTOP------------------------------------------- */
+
+        @media screen and (min-width: 769px) {
+            .container-botao{
+                display: flex;
+                gap: 0.5rem;
+            }
+            .main-container-denuncias2{
+                display: none;
+            }
+            .div-top-bar2{
+                display: none;
+            }
+  .img-nav{
+                width: 40px;
+            }
+            li a{
+                display: flex;
+                align-items: center ;
+                width: fit-content;
+                height: fit-content;
+                color: white;
+            }
+            .img-nav{
+                width: 40px;
+            }
+            nav{
+                height: 3.5em;
+                background-color: #3b8c6e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top: white 1px solid;
+            }
+            nav ul{
+                display: flex;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                height: 3.5rem;
+            }
+            li{
+                width: fit-content;
+                padding: 10px 10px 10px 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 3px;
+                font-weight: 900;
+                font-size: 18px;
+                color: white;
+                font-family: arial;
+            }
+
+            li:hover{
+                cursor: pointer;
+                background-color: #296952;
+            }
+            .slucas-img{
+                width: 100px;
+            }
+            .stcasa-img{
+                width: 100px;
+            }
+            .unimed-img{
+                width: 150px;
+                margin-bottom: 1rem;
+            }
+
+            img{
+            width: 120px;
+        }
+        .container-logo{
+            margin-left: 1rem;
+            display: flex;
+            width: 100%;
+            align-items: center;
+        }
+
+        .unimed-grid{
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            margin-right: 1rem;
+            height: 7rem;
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 48em;
+        }
+        .main-container-denuncias {
+            width: 50%;
+            gap: 0.5rem;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 80%;
+            grid-template-rows: 11.5rem 11.5rem 11.5rem;
+
+        }
+
+        div.container-denuncias-texto p{    
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(255, 255, 255, 0.801);
+            font-weight: 600;
+            
+        }
+        
+
+        .container-denuncias-texto {
+            height: 8rem;
+            background-color: rgb(35, 63, 82);
+            
+            box-shadow: 2px 2px black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            
+        }
+
+        .container-denuncias-foto {
+            height: 8rem;
+            width: 8rem;
+            background-color: silver;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .container-aceitar {
+            margin-left: 1em;
+            width: 170px;
+            height: 180px;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: Black;
+            border-radius: 10px;
+            display: none;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .botao-aceitar {
+             width: 4rem;
+            height: 2.5rem;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: rgb(21, 255, 0);
+            font-size: 10px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .botao-finalizar-mobile {
+            width: 4rem;
+            height: 2.5rem;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: rgb(255, 0, 0);
+            font-size: 10px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .botao-marcar {
+             width: 4rem;
+            height: 2.5rem;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: rgb(0, 89, 255);
+            font-size: 10px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .div-top-bar {
+            display: grid;
+            flex-direction: row;
+            place-items: center;
+        }
+        
+        .div-top-bar-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: #3b8c6e;
+            border-radius: 10px;
+            height: 50px;
+            width: 250px;
+            border: 1px solid white;
+            box-shadow: 2px 2px black;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: white;
+        }
+
+        .grid-item{
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            background-color: #3b8c6e;
+            height: 10em;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 60% 40%;
+        }
+
+        .textologo {
+            font-size: 18px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: white;
+        }
+
+        main section {
+            display: grid;
+            justify-content: center;
+            grid-template-rows: 7rem 12rem 15rem;
+            grid-template-columns: 100%;
+            background-color: rgb(35, 63, 82);
+            width: 25rem;
+            height: 34rem;
+            row-gap: 1rem;
+            
+            border-radius: 20px;
+            box-shadow: 5px 7px rgba(0, 0, 0, 0.301) ;
+        }
+
+        section div{
+            display: flex;
+            justify-content: center;
+
+        }
+
+        section div h1 {
+            
+
+            margin-top: 2rem;
+            font-size: 35px;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+        }
+
+        .botaopref {
+            
+            background-color: orange;
+            width: 19rem;
+            height: 7rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.452);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 30px;
+        }
+
+        a{
+            width: 19rem;
+            height: 7rem;
+            text-decoration: none;
+        }
+
+        .botaocid {
+            background-color: rgb(90, 155, 176);
+            width: 19rem;
+            height: 7rem;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.486);
+            display: flex;
+            flex: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            font-size: 30px;
+        }
+
+        footer {
+            background-color: #3b8c6e;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serifs;
+            color: rgba(255, 255, 255, 0.26);
+        }
+
+        input:active {
+            background-color: rgb(255, 0, 0);
+        }
+       
+        .textoconta1 {
+            color: white;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 24%;
+            top: 78%;
+        }   
+
+        .textoconta2 {
+            position: absolute;
+            color: rgb(62, 19, 220);
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            left: 52%;
+            top: 78%;
+        }
+        
+        .textoconta2:hover {
+            text-decoration: underline;
+        }
+        }
+        
+
+              
+    </style>
+</head>
+<body>
+    <header class="logo">
+        <div class="container-logo">
+            <img src="Brasao_de_Lins-SP.png" >
+            <div class="textologo">Prefeitura Municipal <br> de Lins</div>
+        </div>
+        <div class="unimed-grid">
+            <img src="unimed.png" class="unimed-img"> 
+            <img src="Adobe Express - file.png" class="stcasa-img">  
+            <img src="thumbnail.jpg" alt="" class="slucas-img">     
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="agenteverificacaoprincipal.html"><img src="home.png" class="img-nav">Inicio</a></li>
+            <li><a href="agentehistorico2.html"><img src="visualizar.png" class="img-nav">Historico</a></li>
+            <li><a href="agenteverificacaodenuncias.html"><img src="report.png" class="img-nav">Denuncias</a></li>
+            <li><a href="agentemapa2.html"><img src="map.png" class="img-nav">Mapa de riscos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="div-top-bar2">
+            <div class="div-top-bar-container">
+                <div>DENÚNCIAS</div>
+            </div>
+        </div>
+        <div class="grid-item2">
+            <div class="main-container-denuncias2">
+                <div class="container-denuncias">
+                    <div class="container-denuncias-texto">
+                            29/05/2025<br><br>
+                            R. Pedro de Toledo,<br>
+                            Centro
+                    </div>
+                    <div class="container-denuncias-foto">
+                        FOTO
+                    </div>
+                </div>
+                <div class="container-aceitar">
+                    <div class="botao-aceitar">ACEITAR</div>
+                    <div class="botao-cancelar">CANCELAR</div>
+                    <div class="botao-marcar">MARCAR</div>
+                </div>
+                <div class="container-denuncias">
+                    <div class="container-denuncias-texto">
+                            29/05/2025<br><br>
+                            R. Irineu de Toledo,<br>
+                            Centro
+                    </div>
+                    <div class="container-denuncias-foto">
+                        FOTO
+                    </div>
+                </div>
+                <div class="container-aceitar">
+                    <div class="botao-aceitar">ACEITAR</div>
+                    <div class="botao-cancelar">CANCELAR</div>
+                    <div class="botao-marcar">MARCAR</div>
+                </div>
+                <div class="container-denuncias">
+                    <div class="container-denuncias-texto">
+                            29/05/2025<br><br>
+                            Rua Treze de Maio,<br>
+                            Centro
+                    </div>
+                    <div class="container-denuncias-foto">
+                        FOTO
+                    </div>
+                </div>
+                <div class="container-aceitar">
+                    <div class="botao-aceitar">ACEITAR</div>
+                    <div class="botao-cancelar">CANCELAR</div>
+                    <div class="botao-marcar">MARCAR</div>
+                </div>
+            </div>
+        </div>
+<!-- 
+        ----------------------------SMARTPHONE VERSION------------------------------- -->
+        <div class="div-top-bar">
+            <div class="div-top-bar-container">
+                <div>DENÚNCIAS</div>
+            </div>
+        </div>
+            <div class="main-container-denuncias">
+                <div class="container-denuncias">
+                    <div class="container-denuncias-texto">
+                            
+                             <div class="desktop-local">
+                                <p><b>29/05/2025</b> <br> R. Irineu de Toledo, Centro</p>
+                                <div class="container-botao">
+                                <div class="botao-finalizar-mobile">CANCELAR</div>
+                                <div class="botao-aceitar">ACEITAR</div>
+                                <div class="botao-marcar">MARCAR</div>
+                                </div>
+                                
+                        </div>
+                        <div class="container-denuncias-foto">
+                        FOTO
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="container-aceitar">
+                    <div></div>
+                    <div class="botao-finalizar">FINALIZAR</div>
+                    <div></div>
+                </div>
+                <div class="container-denuncias">
+                    <div class="container-denuncias-texto">
+                
+                             <div class="desktop-local">
+                                <p><b>29/05/2025</b> <br> R. Irineu de Toledo, Centro</p>
+                                <div class="container-botao">
+                                <div class="botao-finalizar-mobile">CANCELAR</div>
+                                <div class="botao-aceitar">ACEITAR</div>
+                                <div class="botao-marcar">MARCAR</div>
+                                </div>
+                        </div>
+                        <div class="container-denuncias-foto">
+                        FOTO
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="container-aceitar">
+                    <div></div>
+                    <div class="botao-finalizar">FINALIZAR</div>
+                    <div></div>
+                </div>
+                <div class="container-denuncias">
+                    <div class="container-denuncias-texto">
+                        
+                        <div class="desktop-local">
+                                <p><b>29/05/2025</b> <br> R. Irineu de Toledo, Centro</p>
+                                <div class="container-botao">
+                                <div class="botao-finalizar-mobile">CANCELAR</div>
+                                <div class="botao-aceitar">ACEITAR</div>
+                                <div class="botao-marcar">MARCAR</div>
+                                </div>
+                        </div>
+                           <div class="container-denuncias-foto">
+                                FOTO
+                            </div>
+                    </div>
+                    
+                </div>
+                <div class="container-aceitar">
+                    <div></div>
+                    <div class="botao-finalizar">FINALIZAR</div>
+                    <div></div>
+                </div>
+            </div>
+    </main>
+    <footer>© Copyright Prefeitura Municipal de Lins - 2006-2025. Todos os direitos reservados
+    </footer>
+</body>
+</html>
